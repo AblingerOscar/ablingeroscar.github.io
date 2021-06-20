@@ -1,0 +1,118 @@
+:root {
+  --nord0: #2e3440;
+  --nord1: #3b4252;
+  --nord2: #434c5e;
+  --nord3: #4c566a;
+  --nord4: #d8dee9;
+  --nord5: #e5e9f0;
+  --nord6: #eceff4;
+  --nord7: #8fbcbb;
+  --nord8: #88c0d0;
+  --nord9: #81a1c1;
+  --nord10: #5e81ac;
+  --nord11: #bf616a;
+  --nord12: #d08770;
+  --nord13: #ebcb8b;
+  --nord14: #a3be8c;
+  --nord15: #b48ead;
+}
+
+
+:root {
+    --bg-color: var(--nord0);
+    --fg-color: var(--nord4);
+    --subtle-fg-color: var(--nord5);
+    --accent-medium: var(--nord14);
+    --accent-github: var(--nord12);
+    --accent-linkedin: var(--nord10);
+    --accent-twitter: var(--nord8);
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        --bg-color: var(--nord6);
+        --bg-color: var(--nord5);
+        --fg-color: var(--nord0);
+        --subtle-fg-color: var(--nord1);
+    }
+}
+
+body, html, .wrapper {
+    height: 100%;
+    margin: 0;
+}
+
+.wrapper {
+    display: flex;
+    align-items: center;
+
+    background: var(--bg-color);
+    color: var(--fg-color);
+    font-family: 'Comfortaa', sans-serif;
+}
+
+.link-wrapper {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "links name";
+    align-items: center;
+}
+
+.name {
+    grid-area: name;
+
+    font-size: 5rem;
+    padding-left: 1rem;
+    font-weight: inherit;
+    
+    transition: .5s ease;
+}
+
+.links {
+    grid-area: links;
+
+    list-style-type: none;
+    font-size: 1.5rem;
+    text-align: right;
+
+    border-right: 1px solid var(--subtle-fg-color);
+    padding-right: 1rem;
+}
+
+.links a {
+    text-decoration: none;
+    color: inherit;
+    transition: .5s ease;
+}
+
+.link-wrapper:not(:focus-within) .links li a:hover, .links li a:focus {
+    font-size: 3rem;
+}
+
+.link-wrapper:not(:focus-within) .links li.medium a:hover, .links li.medium a:focus {
+    color: var(--accent-medium);
+}
+.link-wrapper:not(:focus-within) .links li.github a:hover, .links li.github a:focus {
+    color: var(--accent-github);
+}
+.link-wrapper:not(:focus-within) .links li.linkedin a:hover, .links li.linkedin a:focus {
+    color: var(--accent-linkedin);
+}
+.link-wrapper:not(:focus-within) .links li.twitter a:hover, .links li.twitter a:focus {
+    color: var(--accent-twitter);
+}
+
+.wrapper[data-selected-link="medium"] .name {
+    color: var(--accent-medium);
+}
+.wrapper[data-selected-link="github"] .name {
+    color: var(--accent-github);
+}
+.wrapper[data-selected-link="linkedin"] .name {
+    color: var(--accent-linkedin);
+}
+.wrapper[data-selected-link="twitter"] .name {
+    color: var(--accent-twitter);
+}
