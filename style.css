@@ -1,39 +1,22 @@
 :root {
-  --nord0: #2e3440;
-  --nord1: #3b4252;
-  --nord2: #434c5e;
-  --nord3: #4c566a;
-  --nord4: #d8dee9;
-  --nord5: #e5e9f0;
-  --nord6: #eceff4;
-  --nord7: #8fbcbb;
-  --nord8: #88c0d0;
-  --nord9: #81a1c1;
-  --nord10: #5e81ac;
-  --nord11: #bf616a;
-  --nord12: #d08770;
-  --nord13: #ebcb8b;
-  --nord14: #a3be8c;
-  --nord15: #b48ead;
-}
-
-
-:root {
-    --bg-color: var(--nord0);
-    --fg-color: var(--nord4);
-    --subtle-fg-color: var(--nord5);
-    --accent-medium: var(--nord14);
-    --accent-github: var(--nord12);
-    --accent-linkedin: var(--nord10);
-    --accent-twitter: var(--nord8);
+    --bg-color: var(--dark-shade0);
+    --fg-color: var(--dark-shade7);
+    --subtle-fg-color: var(--dark-shade6);
+    --accent-medium: var(--dark-accent3);
+    --accent-github: var(--dark-accent0);
+    --accent-linkedin: var(--dark-accent4);
+    --accent-twitter: var(--dark-accent5);
 }
 
 @media (prefers-color-scheme: light) {
     :root {
-        --bg-color: var(--nord6);
-        --bg-color: var(--nord5);
-        --fg-color: var(--nord0);
-        --subtle-fg-color: var(--nord1);
+        --bg-color: var(--light-shade0);
+        --fg-color: var(--light-shade7);
+        --subtle-fg-color: var(--light-shade6);
+        --accent-medium: var(--light-accent3);
+        --accent-github: var(--light-accent0);
+        --accent-linkedin: var(--light-accent4);
+        --accent-twitter: var(--light-accent5);
     }
 }
 
