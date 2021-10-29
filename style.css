@@ -2,7 +2,7 @@
     --bg-color: var(--dark-shade0);
     --fg-color: var(--dark-shade7);
     --subtle-fg-color: var(--dark-shade6);
-    --accent-medium: var(--dark-accent3);
+    --accent-blog: var(--dark-accent1);
     --accent-github: var(--dark-accent0);
     --accent-linkedin: var(--dark-accent4);
     --accent-twitter: var(--dark-accent5);
@@ -13,7 +13,7 @@
         --bg-color: var(--light-shade0);
         --fg-color: var(--light-shade7);
         --subtle-fg-color: var(--light-shade6);
-        --accent-medium: var(--light-accent3);
+        --accent-blog: var(--light-accent1);
         --accent-github: var(--light-accent0);
         --accent-linkedin: var(--light-accent4);
         --accent-twitter: var(--light-accent5);
@@ -74,8 +74,8 @@ body, html, .wrapper {
     font-size: 3rem;
 }
 
-.link-wrapper:not(:focus-within) .links li.medium a:hover, .links li.medium a:focus {
-    color: var(--accent-medium);
+.link-wrapper:not(:focus-within) .links li.blog a:hover, .links li.blog a:focus {
+    color: var(--accent-blog);
 }
 .link-wrapper:not(:focus-within) .links li.github a:hover, .links li.github a:focus {
     color: var(--accent-github);
@@ -87,8 +87,8 @@ body, html, .wrapper {
     color: var(--accent-twitter);
 }
 
-.wrapper[data-selected-link="medium"] .name {
-    color: var(--accent-medium);
+.wrapper[data-selected-link="blog"] .name {
+    color: var(--accent-blog);
 }
 .wrapper[data-selected-link="github"] .name {
     color: var(--accent-github);

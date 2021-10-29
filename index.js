@@ -6,7 +6,7 @@
         const links = document.querySelector('.links')
         const wrapper = document.querySelector('.wrapper')
 
-        ;['github', 'medium', 'linkedin', 'twitter'].forEach(link => {
+        ;['github', 'blog', 'linkedin', 'twitter'].forEach(link => {
             const el = links.getElementsByClassName(link)[0].getElementsByTagName('a')[0]
 
             el.addEventListener('mouseenter', function() {
