@@ -32,6 +32,7 @@ body, html, .wrapper {
     background: var(--bg-color);
     color: var(--fg-color);
     font-family: 'Comfortaa', sans-serif;
+    font-weight: 300;
 }
 
 .link-wrapper {
@@ -98,4 +99,15 @@ body, html, .wrapper {
 }
 .wrapper[data-selected-link="twitter"] .name {
     color: var(--accent-twitter);
+}
+
+/* fonts */
+@font-face {
+    font-family: 'Comfortaa';
+    src: url(Comfortaa/Comfortaa-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: 'Comfortaa';
+    font-weight: 300;
+    src: url(Comfortaa/static/Comfortaa-Light.ttf);
 }
